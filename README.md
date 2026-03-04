@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Ziggurats – Animated Art Commerce Experience
 
-## Getting Started
+Ziggurats is a multi-page art commerce web application that simulates the complete journey of purchasing an artwork — from browsing to final delivery.
 
-First, run the development server:
+This project was built as a test-case scenario to demonstrate routing, structured order flow, and animation-driven storytelling using modern frontend technologies.
+
+---
+
+## 🚀 Project Overview
+
+The application guides users through a realistic purchase flow:
+
+1. Browse artworks (Paintings & Sculptures)
+2. View individual product details
+3. Purchase confirmation
+4. Packing animation (box/carton based on product type)
+5. Shipping stage
+6. Delivery confirmation
+
+Each stage exists as a separate route to reflect a real-world multi-page commerce experience rather than a single scroll-only page.
+
+---
+
+## 🛠️ Tech Stack
+
+- Next.js (App Router)
+- React (Functional Components)
+- TypeScript
+- Tailwind CSS
+- GSAP + ScrollTrigger
+
+---
+
+## 🧱 Application Routes
+
+- `/` – Homepage (Gallery Landing Page)
+- `/paintings` – Paintings Collection
+- `/sculptures` – Sculptures Collection
+- `/product/[id]` – Product Detail Page
+- `/cart` – Cart Page
+- `/checkout` – Order Confirmation
+- `/order/packed` – Packing Animation
+- `/order/shipped` – Shipping Animation
+- `/order/delivered` – Delivery Confirmation
+
+---
+
+## ✨ Features
+
+- Multi-page architecture using Next.js App Router
+- Smooth route-based navigation
+- Scroll-triggered animations using GSAP
+- Conditional packing logic:
+  - Sculptures → Packed in box
+  - Paintings → Packed in carton
+- Dedicated order lifecycle pages
+- Responsive modern UI
+- Clean and modular component structure
+
+---
+
+## 📦 Installation
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Then open:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+# 📌 Notes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project simulates an order workflow and does not include real payment integration.
 
-## Learn More
+The focus is on frontend architecture, routing logic, and animation flow.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built as part of an assignment demonstrating structured navigation and visual storytelling.
